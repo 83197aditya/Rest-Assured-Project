@@ -1,0 +1,16 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/java:17-bullseye",
+    "features": {
+      "ghcr.io/devcontainers/features/maven:1": {}
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "vscjava.vscode-java-pack", // Essential Java extensions
+          "redhat.java", // Red Hat's Java extension (includes Maven support)
+          "vscjava.vscode-maven", // Maven for Java extension
+          "ms-vscode.eclipse-jdt-ls" // Eclipse JDT Language Server
+        ]
+      }
+    }
+  }
