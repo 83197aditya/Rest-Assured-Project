@@ -1,10 +1,10 @@
-# Created at 2025-03-15T21:01:33.605
+# Created at 2025-03-21T20:18:54.990
 org.testng.TestNGException: 
 Cannot find class in classpath: com.api.tests.LoginTest
 	at org.testng.xml.XmlClass.loadClass(XmlClass.java:74)
 	at org.testng.xml.XmlClass.init(XmlClass.java:66)
 	at org.testng.xml.XmlClass.<init>(XmlClass.java:53)
-	at org.testng.xml.TestNGContentHandler.startElement(TestNGContentHandler.java:587)
+	at org.testng.xml.TestNGContentHandler.startElement(TestNGContentHandler.java:607)
 	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
 	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.emptyElement(XMLDTDValidator.java:752)
@@ -24,10 +24,10 @@ Cannot find class in classpath: com.api.tests.LoginTest
 	at org.testng.xml.SuiteXmlParser.parse(SuiteXmlParser.java:9)
 	at org.testng.xml.internal.Parser.parse(Parser.java:155)
 	at org.testng.xml.internal.Parser.parse(Parser.java:241)
-	at org.testng.TestNG.parseSuite(TestNG.java:327)
-	at org.testng.TestNG.initializeSuitesAndJarFile(TestNG.java:390)
-	at org.testng.TestNG.initializeEverything(TestNG.java:1047)
-	at org.testng.TestNG.run(TestNG.java:1059)
+	at org.testng.TestNG.parseSuite(TestNG.java:328)
+	at org.testng.TestNG.initializeSuitesAndJarFile(TestNG.java:392)
+	at org.testng.TestNG.initializeEverything(TestNG.java:1081)
+	at org.testng.TestNG.run(TestNG.java:1093)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
