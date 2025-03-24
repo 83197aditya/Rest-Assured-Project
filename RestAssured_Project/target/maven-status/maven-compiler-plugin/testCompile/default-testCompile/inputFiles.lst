@@ -3,4 +3,7 @@
 /workspaces/Rest-Assured-Project/RestAssured_Project/src/test/java/com/service/AccountService.java
 /workspaces/Rest-Assured-Project/RestAssured_Project/src/test/java/com/test/AuthorizedTest.java
 /workspaces/Rest-Assured-Project/RestAssured_Project/src/test/java/com/models/response/AuthorizedResponse.java
+/workspaces/Rest-Assured-Project/RestAssured_Project/src/test/java/com/models/request/GenerateTokenRequest.java
+/workspaces/Rest-Assured-Project/RestAssured_Project/src/test/java/com/test/GenerateTokenTest.java
 /workspaces/Rest-Assured-Project/RestAssured_Project/src/test/java/com/service/InnerBaseService.java
+/workspaces/Rest-Assured-Project/RestAssured_Project/src/test/java/com/models/response/GenerateTokenResponse.java

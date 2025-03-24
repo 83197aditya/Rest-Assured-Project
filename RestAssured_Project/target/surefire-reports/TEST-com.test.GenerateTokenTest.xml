@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.test.AuthorizedTest" time="3.772" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.test.GenerateTokenTest" time="4.755" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -11,9 +11,9 @@
     <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/local/sdkman/candidates/java/21.0.5-ms/lib"/>
-    <property name="sun.java.command" value="/workspaces/Rest-Assured-Project/RestAssured_Project/target/surefire/surefirebooter2248729438266298947.jar /workspaces/Rest-Assured-Project/RestAssured_Project/target/surefire 2025-03-24T20-17-10_854-jvmRun1 surefire16941395417450107187tmp surefire_012199874245468045589tmp"/>
+    <property name="sun.java.command" value="/workspaces/Rest-Assured-Project/RestAssured_Project/target/surefire/surefirebooter11515051583473915609.jar /workspaces/Rest-Assured-Project/RestAssured_Project/target/surefire 2025-03-24T21-06-45_334-jvmRun1 surefire17344115003828936864tmp surefire_010931934579458437016tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.test.AuthorizedTest"/>
+    <property name="test" value="com.test.GenerateTokenTest"/>
     <property name="surefire.test.class.path" value="/workspaces/Rest-Assured-Project/RestAssured_Project/target/test-classes:/workspaces/Rest-Assured-Project/RestAssured_Project/target/classes:/home/codespace/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/home/codespace/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/codespace/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/codespace/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/codespace/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/codespace/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/codespace/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/codespace/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/codespace/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/codespace/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/home/codespace/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/home/codespace/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/home/codespace/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/codespace/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/home/codespace/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.2/jackson-databind-2.16.2.jar:/home/codespace/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.2/jackson-annotations-2.16.2.jar:/home/codespace/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/codespace"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/workspaces/Rest-Assured-Project/RestAssured_Project/target/surefire/surefirebooter2248729438266298947.jar"/>
+    <property name="surefire.real.class.path" value="/workspaces/Rest-Assured-Project/RestAssured_Project/target/surefire/surefirebooter11515051583473915609.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-LTS"/>
     <property name="user.name" value="codespace"/>
@@ -54,5 +54,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="authorizedTest" classname="com.test.AuthorizedTest" time="3.067"/>
+  <testcase name="generateTokenTest" classname="com.test.GenerateTokenTest" time="4.334"/>
 </testsuite>

@@ -1,4 +1,4 @@
-# Created at 2025-03-21T20:18:54.990
+# Created at 2025-03-24T20:16:46.398
 org.testng.TestNGException: 
 Cannot find class in classpath: com.api.tests.LoginTest
 	at org.testng.xml.XmlClass.loadClass(XmlClass.java:74)

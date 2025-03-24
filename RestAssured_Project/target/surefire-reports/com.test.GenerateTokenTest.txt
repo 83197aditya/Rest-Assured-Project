@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.test.AuthorizedTest
+Test set: com.test.GenerateTokenTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.772 s - in com.test.AuthorizedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.755 s - in com.test.GenerateTokenTest
