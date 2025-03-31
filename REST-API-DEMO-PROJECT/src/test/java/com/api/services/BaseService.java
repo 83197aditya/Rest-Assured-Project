@@ -16,4 +16,12 @@ public class BaseService {
     protected Response getRequest(String endpoint){
         return requestSpec.contentType(ContentType.JSON).get(endpoint);
     }
+
+    protected Response postRequest(String endpoint, Object payload){
+        return requestSpec.contentType(ContentType.JSON).body(payload).post(endpoint);
+    }
+
+    protected Response putRequest(String endpoint, Object payload){
+        return requestSpec.contentType(ContentType.JSON).body(payload).put(endpoint);
+    }
 }

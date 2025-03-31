@@ -1,16 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-30T19:59:12 UTC" name="Surefire suite" finished-at="2025-03-30T19:59:15 UTC" duration-ms="2656">
+  <suite started-at="2025-03-31T20:14:54 UTC" name="Surefire suite" finished-at="2025-03-31T20:15:03 UTC" duration-ms="8811">
     <groups>
     </groups>
-    <test started-at="2025-03-30T19:59:12 UTC" name="Surefire test" finished-at="2025-03-30T19:59:15 UTC" duration-ms="2656">
-      <class name="com.api.test.GetActivitiesTest">
-        <test-method signature="getActivitiesTest()[pri:0, instance:com.api.test.GetActivitiesTest@41ee392b]" started-at="2025-03-30T19:59:12 UTC" name="getActivitiesTest" finished-at="2025-03-30T19:59:15 UTC" duration-ms="2622" status="PASS">
+    <test started-at="2025-03-31T20:14:54 UTC" name="Surefire test" finished-at="2025-03-31T20:15:03 UTC" duration-ms="8811">
+      <class name="com.api.test.PutAuthorByIdTest">
+        <test-method signature="putAuthorById()[pri:0, instance:com.api.test.PutAuthorByIdTest@2893de87]" started-at="2025-03-31T20:15:02 UTC" name="putAuthorById" finished-at="2025-03-31T20:15:02 UTC" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getActivitiesTest -->
+        </test-method> <!-- putAuthorById -->
+      </class> <!-- com.api.test.PutAuthorByIdTest -->
+      <class name="com.api.test.GetBooksTest">
+        <test-method signature="getBooks()[pri:0, instance:com.api.test.GetBooksTest@341b80b2]" started-at="2025-03-31T20:14:54 UTC" name="getBooks" finished-at="2025-03-31T20:14:58 UTC" duration-ms="3464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBooks -->
+      </class> <!-- com.api.test.GetBooksTest -->
+      <class name="com.api.test.GetAuthorsTest">
+        <test-method signature="getAuthors()[pri:0, instance:com.api.test.GetAuthorsTest@5d740a0f]" started-at="2025-03-31T20:15:00 UTC" name="getAuthors" finished-at="2025-03-31T20:15:01 UTC" duration-ms="997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAuthors -->
+      </class> <!-- com.api.test.GetAuthorsTest -->
+      <class name="com.api.test.GetAuthorByIdTest">
+        <test-method signature="getAuthorById()[pri:0, instance:com.api.test.GetAuthorByIdTest@1f1c7bf6]" started-at="2025-03-31T20:14:59 UTC" name="getAuthorById" finished-at="2025-03-31T20:14:59 UTC" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAuthorById -->
+      </class> <!-- com.api.test.GetAuthorByIdTest -->
+      <class name="com.api.test.GetAuthorByIdBookTest">
+        <test-method signature="getAuthorByIdBook()[pri:0, instance:com.api.test.GetAuthorByIdBookTest@55ca8de8]" started-at="2025-03-31T20:15:02 UTC" name="getAuthorByIdBook" finished-at="2025-03-31T20:15:03 UTC" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAuthorByIdBook -->
+      </class> <!-- com.api.test.GetAuthorByIdBookTest -->
+      <class name="com.api.test.PostBooksTest">
+        <test-method signature="postBooks()[pri:0, instance:com.api.test.PostBooksTest@75c072cb]" started-at="2025-03-31T20:14:58 UTC" name="postBooks" finished-at="2025-03-31T20:14:59 UTC" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postBooks -->
+      </class> <!-- com.api.test.PostBooksTest -->
+      <class name="com.api.test.PostAuthorTest">
+        <test-method signature="postAuthor()[pri:0, instance:com.api.test.PostAuthorTest@20d3d15a]" started-at="2025-03-31T20:15:01 UTC" name="postAuthor" finished-at="2025-03-31T20:15:02 UTC" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postAuthor -->
+      </class> <!-- com.api.test.PostAuthorTest -->
+      <class name="com.api.test.PutAtivityTest">
+        <test-method signature="putActivity()[pri:0, instance:com.api.test.PutAtivityTest@214b199c]" started-at="2025-03-31T20:15:01 UTC" name="putActivity" finished-at="2025-03-31T20:15:01 UTC" duration-ms="426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putActivity -->
+      </class> <!-- com.api.test.PutAtivityTest -->
+      <class name="com.api.test.GetBookByIdTest">
+        <test-method signature="getBooksById()[pri:0, instance:com.api.test.GetBookByIdTest@25b485ba]" started-at="2025-03-31T20:14:59 UTC" name="getBooksById" finished-at="2025-03-31T20:15:00 UTC" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBooksById -->
+      </class> <!-- com.api.test.GetBookByIdTest -->
+      <class name="com.api.test.PostActivityTest">
+        <test-method signature="postActivity()[pri:0, instance:com.api.test.PostActivityTest@2c34f934]" started-at="2025-03-31T20:15:03 UTC" name="postActivity" finished-at="2025-03-31T20:15:03 UTC" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postActivity -->
+      </class> <!-- com.api.test.PostActivityTest -->
+      <class name="com.api.test.GetActivityByIdTest">
+        <test-method signature="getActivityById()[pri:0, instance:com.api.test.GetActivityByIdTest@5b0abc94]" started-at="2025-03-31T20:14:58 UTC" name="getActivityById" finished-at="2025-03-31T20:14:58 UTC" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getActivityById -->
+      </class> <!-- com.api.test.GetActivityByIdTest -->
+      <class name="com.api.test.GetActivitiesTest">
+        <test-method signature="getActivities()[pri:0, instance:com.api.test.GetActivitiesTest@2b546384]" started-at="2025-03-31T20:15:00 UTC" name="getActivities" finished-at="2025-03-31T20:15:00 UTC" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getActivities -->
       </class> <!-- com.api.test.GetActivitiesTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
