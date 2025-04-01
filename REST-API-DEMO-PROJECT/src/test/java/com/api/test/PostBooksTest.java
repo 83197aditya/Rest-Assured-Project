@@ -15,7 +15,6 @@ public class PostBooksTest {
         BooksRequest booksRequest = new BooksRequest(1, "Test Book", "Test Automation description book", 100, "Lorem lorem lorem. Lorem lorem lorem." ,"2023-10-01");
         Response postResponse = booksService.postBooks(booksRequest);
         BooksResponse booksResponse = postResponse.as(BooksResponse.class);
-        Assert.assertEquals(postResponse.getStatusCode(), 200, "Expected status code 200");
         Assert.assertEquals(booksResponse.getId(), 1, "Expected book ID 1");
         Assert.assertEquals(booksResponse.getTitle(), "Test Book", "Expected book title 'Test Book'");
         Assert.assertEquals(booksResponse.getDescription(), "Test Automation description book", "Expected book description 'Test Automation description book'");

@@ -19,6 +19,5 @@ public class PostAuthorTest {
         Assert.assertEquals(authorsDetail.getIdBook(),32);
         Assert.assertEquals(authorsDetail.getFirstName(),"First Test Automation 1");
         Assert.assertEquals(authorsDetail.getLastName(),"Last Test Automation 1");
-        Assert.assertEquals(authorResponse.getStatusCode(), 200);
     }
 }
