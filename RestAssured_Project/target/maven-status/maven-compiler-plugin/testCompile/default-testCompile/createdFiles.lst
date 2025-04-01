@@ -1,1 +1,6 @@
-com/api/tests/LoginTest.class
+com/service/AccountService.class
+com/models/request/AuthorizedRequest.class
+com/service/InnerBaseService.class
+com/LoginTest.class
+com/models/response/AuthorizedResponse.class
+com/test/AuthorizedTest.class

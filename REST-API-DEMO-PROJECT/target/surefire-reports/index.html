@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-passed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.GetActivitiesTest" class="method navigator-link" hash-for-method="getActivities">getActivities</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.GetActivityByIdTest" class="method navigator-link" hash-for-method="getActivityById">getActivityById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.GetAuthorByIdTest" class="method navigator-link" hash-for-method="getAuthorById">getAuthorById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.GetAuthorByIdBookTest" class="method navigator-link" hash-for-method="getAuthorByIdBook">getAuthorByIdBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.GetAuthorsTest" class="method navigator-link" hash-for-method="getAuthors">getAuthors</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.GetBooksTest" class="method navigator-link" hash-for-method="getBooks">getBooks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.GetBookByIdTest" class="method navigator-link" hash-for-method="getBooksById">getBooksById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.GetUserByIdTest" class="method navigator-link" hash-for-method="getUserById">getUserById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.GetUsersTest" class="method navigator-link" hash-for-method="getUsers">getUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.PostActivityTest" class="method navigator-link" hash-for-method="postActivity">postActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.PostAuthorTest" class="method navigator-link" hash-for-method="postAuthor">postAuthor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.PostBooksTest" class="method navigator-link" hash-for-method="postBooks">postBooks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.PostUsersTest" class="method navigator-link" hash-for-method="postUsers">postUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.PutAtivityTest" class="method navigator-link" hash-for-method="putActivity">putActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.PutAuthorByIdTest" class="method navigator-link" hash-for-method="putAuthorById">putAuthorById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.PutBookByIdTest" class="method navigator-link" hash-for-method="putBookById">putBookById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.api.test.PutUserByIdTest" class="method navigator-link" hash-for-method="putUserById">putUserById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.GetBookByIdTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBooksById">
+                  </a> <!-- getBooksById -->
+                  <span class="method-name">getBooksById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.GetActivitiesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getActivities">
+                  </a> <!-- getActivities -->
+                  <span class="method-name">getActivities</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.PutUserByIdTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="putUserById">
+                  </a> <!-- putUserById -->
+                  <span class="method-name">putUserById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.PutAuthorByIdTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="putAuthorById">
+                  </a> <!-- putAuthorById -->
+                  <span class="method-name">putAuthorById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.PutBookByIdTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="putBookById">
+                  </a> <!-- putBookById -->
+                  <span class="method-name">putBookById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.GetActivityByIdTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getActivityById">
+                  </a> <!-- getActivityById -->
+                  <span class="method-name">getActivityById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.GetUsersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUsers">
+                  </a> <!-- getUsers -->
+                  <span class="method-name">getUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.PostBooksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postBooks">
+                  </a> <!-- postBooks -->
+                  <span class="method-name">postBooks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.GetAuthorByIdTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAuthorById">
+                  </a> <!-- getAuthorById -->
+                  <span class="method-name">getAuthorById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.PostUsersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postUsers">
+                  </a> <!-- postUsers -->
+                  <span class="method-name">postUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.GetAuthorsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAuthors">
+                  </a> <!-- getAuthors -->
+                  <span class="method-name">getAuthors</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.GetBooksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBooks">
+                  </a> <!-- getBooks -->
+                  <span class="method-name">getBooks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.GetAuthorByIdBookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAuthorByIdBook">
+                  </a> <!-- getAuthorByIdBook -->
+                  <span class="method-name">getAuthorByIdBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.GetUserByIdTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserById">
+                  </a> <!-- getUserById -->
+                  <span class="method-name">getUserById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.PostAuthorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postAuthor">
+                  </a> <!-- postAuthor -->
+                  <span class="method-name">postAuthor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.PostActivityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postActivity">
+                  </a> <!-- postActivity -->
+                  <span class="method-name">postActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.api.test.PutAtivityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="putActivity">
+                  </a> <!-- putActivity -->
+                  <span class="method-name">putActivity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.api.test.GetBooksTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.GetActivityByIdTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.PostUsersTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.PostBooksTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.GetAuthorByIdTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.PutBookByIdTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.GetBookByIdTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.GetActivitiesTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.PutUserByIdTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.GetAuthorsTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.PutAtivityTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.PostAuthorTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.GetUsersTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.PutAuthorByIdTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.GetUserByIdTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.GetAuthorByIdBookTest&quot;/&gt;
+      &lt;class name=&quot;com.api.test.PostActivityTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (17 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getBooks')
+data.setCell(0, 2, 'com.api.test.GetBooksTest')
+data.setCell(0, 3, 3575);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getAuthors')
+data.setCell(1, 2, 'com.api.test.GetAuthorsTest')
+data.setCell(1, 3, 1092);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'postUsers')
+data.setCell(2, 2, 'com.api.test.PostUsersTest')
+data.setCell(2, 3, 496);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'putUserById')
+data.setCell(3, 2, 'com.api.test.PutUserByIdTest')
+data.setCell(3, 3, 468);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getActivityById')
+data.setCell(4, 2, 'com.api.test.GetActivityByIdTest')
+data.setCell(4, 3, 459);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'putActivity')
+data.setCell(5, 2, 'com.api.test.PutAtivityTest')
+data.setCell(5, 3, 428);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'getBooksById')
+data.setCell(6, 2, 'com.api.test.GetBookByIdTest')
+data.setCell(6, 3, 425);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'postBooks')
+data.setCell(7, 2, 'com.api.test.PostBooksTest')
+data.setCell(7, 3, 425);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'putBookById')
+data.setCell(8, 2, 'com.api.test.PutBookByIdTest')
+data.setCell(8, 3, 424);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getActivities')
+data.setCell(9, 2, 'com.api.test.GetActivitiesTest')
+data.setCell(9, 3, 417);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getUsers')
+data.setCell(10, 2, 'com.api.test.GetUsersTest')
+data.setCell(10, 3, 417);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'postAuthor')
+data.setCell(11, 2, 'com.api.test.PostAuthorTest')
+data.setCell(11, 3, 415);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getAuthorById')
+data.setCell(12, 2, 'com.api.test.GetAuthorByIdTest')
+data.setCell(12, 3, 414);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'putAuthorById')
+data.setCell(13, 2, 'com.api.test.PutAuthorByIdTest')
+data.setCell(13, 3, 408);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'getUserById')
+data.setCell(14, 2, 'com.api.test.GetUserByIdTest')
+data.setCell(14, 3, 400);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'postActivity')
+data.setCell(15, 2, 'com.api.test.PostActivityTest')
+data.setCell(15, 3, 398);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'getAuthorByIdBook')
+data.setCell(16, 2, 'com.api.test.GetAuthorByIdBookTest')
+data.setCell(16, 3, 395);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.GetBooksTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getBooks</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.GetActivityByIdTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getActivityById</span>
+                <span class="method-start">3581 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.PostUsersTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">postUsers</span>
+                <span class="method-start">4042 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.PostBooksTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">postBooks</span>
+                <span class="method-start">4541 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.GetAuthorByIdTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAuthorById</span>
+                <span class="method-start">4967 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.PutBookByIdTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">putBookById</span>
+                <span class="method-start">5382 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.GetBookByIdTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getBooksById</span>
+                <span class="method-start">5808 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.GetActivitiesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getActivities</span>
+                <span class="method-start">6235 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.PutUserByIdTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">putUserById</span>
+                <span class="method-start">6653 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.GetAuthorsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAuthors</span>
+                <span class="method-start">7124 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.PutAtivityTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">putActivity</span>
+                <span class="method-start">8217 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.PostAuthorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">postAuthor</span>
+                <span class="method-start">8648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.GetUsersTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getUsers</span>
+                <span class="method-start">9065 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.PutAuthorByIdTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">putAuthorById</span>
+                <span class="method-start">9483 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.GetUserByIdTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getUserById</span>
+                <span class="method-start">9891 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.GetAuthorByIdBookTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAuthorByIdBook</span>
+                <span class="method-start">10291 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.api.test.PostActivityTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">postActivity</span>
+                <span class="method-start">10687 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
