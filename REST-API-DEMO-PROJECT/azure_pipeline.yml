@@ -1,43 +1,76 @@
 trigger:
   - main  # Runs the pipeline on commits to the main branch
 
+timeoutInMinutes: 30  # Stops if execution takes more than 30 minutes
+
+variables:
+  JAVA_VERSION: '17'
+  MAVEN_GOALS: 'clean test'
+  TEST_RESULTS_PATH: '**/target/surefire-reports/TEST-*.xml'
+
 pool:
-  vmImage: 'ubuntu-latest'  # Uses Ubuntu for the build agent
+  vmImage: 'ubuntu-latest'
 
 steps:
   - task: JavaToolInstaller@0
     inputs:
-      versionSpec: '17'  # Specify the required Java version
-      jdkArchitectureOption: 'x64'  # This fixes the error
-      jdkSourceOption: 'PreInstalled'  # Or use 'AzureStorage' if downloading from Azure Storage
+      versionSpec: '$(JAVA_VERSION)'
+      jdkArchitectureOption: 'x64'
+      jdkSourceOption: 'PreInstalled'
 
   - script: |
       echo "Setting up Maven"
       mvn --version
     displayName: 'Verify Maven Installation'
 
+  - task: Cache@2
+    inputs:
+      key: 'maven | "$(Agent.OS)" | pom.xml'
+      path: ~/.m2/repository
+      restoreKeys: |
+        maven | "$(Agent.OS)"
+
   - script: |
       echo "Running tests with Maven"
-      mvn clean test
+      mvn $(MAVEN_GOALS) -T 4
     displayName: 'Run REST Assured Tests'
 
   - task: Maven@4
     inputs:
       mavenPomFile: 'pom.xml'
-      goals: 'clean test'
+      goals: '$(MAVEN_GOALS)'
       publishJUnitResults: true
-      testResultsFiles: '**/target/surefire-reports/TEST-*.xml'
+      testResultsFiles: '$(TEST_RESULTS_PATH)'
       javaHomeOption: 'JDKVersion'
-      jdkVersionOption: '17'
+      jdkVersionOption: '$(JAVA_VERSION)'
       mavenVersionOption: 'Default'
 
   - task: PublishTestResults@2
     inputs:
-      testResultsFiles: '**/target/surefire-reports/TEST-*.xml'  # Collects JUnit test results
+      testResultsFiles: '$(TEST_RESULTS_PATH)'
       testRunTitle: 'REST Assured Tests'
     condition: succeededOrFailed()
 
+  - script: |
+      mvn surefire-report:report-only
+    displayName: 'Generate HTML Test Report'
+
   - task: PublishBuildArtifacts@1
     inputs:
-      pathToPublish: 'target/surefire-reports'  # Uploads test reports
-      artifactName: 'TestReports'
+      pathToPublish: 'target/site/surefire-report.html'
+      artifactName: 'HTML-TestReport'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: '$(System.DefaultWorkingDirectory)/logs'
+      artifactName: 'Logs'
+    condition: failed()
+
+  - task: PowerShell@2
+    inputs:
+      targetType: 'inline'
+      script: |
+        if ("$(Build.Status)" -ne "Succeeded") {
+          Write-Host "##vso[task.logissue type=error]Build failed! Notify the team."
+        }
+    condition: failed()
