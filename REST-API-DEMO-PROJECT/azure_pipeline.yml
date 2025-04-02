@@ -12,68 +12,68 @@ pool:
 jobs:
   - job: BuildAndTest
     timeoutInMinutes: 10  # ✅ Correct placement inside a job
-steps:
-  - script: echo "Running tests"
+    steps:
+      - script: echo "Running tests"
 
-  - task: JavaToolInstaller@0
-    inputs:
-      versionSpec: '$(JAVA_VERSION)'
-      jdkArchitectureOption: 'x64'
-      jdkSourceOption: 'PreInstalled'
+      - task: JavaToolInstaller@0
+        inputs:
+          versionSpec: '$(JAVA_VERSION)'
+          jdkArchitectureOption: 'x64'
+          jdkSourceOption: 'PreInstalled'
 
-  - script: |
-      echo "Setting up Maven"
-      mvn --version
-    displayName: 'Verify Maven Installation'
+      - script: |
+          echo "Setting up Maven"
+          mvn --version
+        displayName: 'Verify Maven Installation'
 
-  - task: Cache@2
-    inputs:
-      key: 'maven | "$(Agent.OS)" | pom.xml'
-      path: ~/.m2/repository
-      restoreKeys: |
-        maven | "$(Agent.OS)"
+      - task: Cache@2
+        inputs:
+          key: 'maven | "$(Agent.OS)" | pom.xml'
+          path: ~/.m2/repository
+          restoreKeys: |
+            maven | "$(Agent.OS)"
 
-  - script: |
-      echo "Running tests with Maven"
-      mvn $(MAVEN_GOALS) -T 4
-    displayName: 'Run REST Assured Tests'
+      - script: |
+          echo "Running tests with Maven"
+          mvn $(MAVEN_GOALS) -T 4
+        displayName: 'Run REST Assured Tests'
 
-  - task: Maven@4
-    inputs:
-      mavenPomFile: 'pom.xml'
-      goals: '$(MAVEN_GOALS)'
-      publishJUnitResults: true
-      testResultsFiles: '$(TEST_RESULTS_PATH)'
-      javaHomeOption: 'JDKVersion'
-      jdkVersionOption: '$(JAVA_VERSION)'
-      mavenVersionOption: 'Default'
+      - task: Maven@4
+        inputs:
+          mavenPomFile: 'pom.xml'
+          goals: '$(MAVEN_GOALS)'
+          publishJUnitResults: true
+          testResultsFiles: '$(TEST_RESULTS_PATH)'
+          javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '$(JAVA_VERSION)'
+          mavenVersionOption: 'Default'
 
-  - task: PublishTestResults@2
-    inputs:
-      testResultsFiles: '$(TEST_RESULTS_PATH)'
-      testRunTitle: 'REST Assured Tests'
-    condition: succeededOrFailed()
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFiles: '$(TEST_RESULTS_PATH)'
+          testRunTitle: 'REST Assured Tests'
+        condition: succeededOrFailed()
 
-  - script: |
-      mvn surefire-report:report-only
-    displayName: 'Generate HTML Test Report'
+      - script: |
+          mvn surefire-report:report-only
+        displayName: 'Generate HTML Test Report'
 
-  - task: PublishBuildArtifacts@1
-    inputs:
-      pathToPublish: 'target/site/surefire-report.html'
-      artifactName: 'HTML-TestReport'
+      - task: PublishBuildArtifacts@1
+        inputs:
+          pathToPublish: 'target/site/surefire-report.html'
+          artifactName: 'HTML-TestReport'
 
-  - task: PublishBuildArtifacts@1
-    inputs:
-      pathToPublish: '$(System.DefaultWorkingDirectory)/logs'
-      artifactName: 'Logs'
-    condition: failed()
+      - task: PublishBuildArtifacts@1
+        inputs:
+          pathToPublish: '$(System.DefaultWorkingDirectory)/logs'
+          artifactName: 'Logs'
+        condition: failed()
 
-  - task: PowerShell@2
-    inputs:
-      targetType: 'inline'
-      script: |
-        if ("$(Build.Status)" -ne "Succeeded") {
-          Write-Host "##vso[task.logissue type=error]Build failed! Notify the team."
-        }
-    condition: failed()
+      - task: PowerShell@2
+        inputs:
+          targetType: 'inline'
+          script: |
+            if ("$(Build.Status)" -ne "Succeeded") {
+              Write-Host "##vso[task.logissue type=error]Build failed! Notify the team."
+            }
+        condition: failed()
