@@ -13,9 +13,9 @@ jobs:
   - job: BuildAndTest
     timeoutInMinutes: 10 
     steps:
-      - checkout: self  # ✅ Ensures repo is cloned
+      - checkout: self 
 
-      - script: ls -la $(System.DefaultWorkingDirectory)  # ✅ Lists files to check correct path
+      - script: ls -la $(System.DefaultWorkingDirectory)  
         displayName: 'Check Workspace Files'
 
       - task: JavaToolInstaller@0
