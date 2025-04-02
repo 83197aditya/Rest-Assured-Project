@@ -35,13 +35,6 @@ jobs:
       - script: ls -la $(System.DefaultWorkingDirectory)/REST-API-DEMO-PROJECT
         displayName: 'Check Project Directory'
 
-      - task: Cache@2
-        inputs:
-          key: 'maven | "$(Agent.OS)" | REST-API-DEMO-PROJECT/pom.xml'
-          path: ~/.m2/repository
-          restoreKeys: |
-            maven | "$(Agent.OS)"
-
       - script: |
           echo "Running tests with Maven"
           cd $(System.DefaultWorkingDirectory)/REST-API-DEMO-PROJECT
