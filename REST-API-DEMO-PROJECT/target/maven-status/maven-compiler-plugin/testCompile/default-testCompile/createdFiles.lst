@@ -3,6 +3,7 @@ com/api/models/response/BooksResponse.class
 com/api/services/AuthorsService.class
 com/api/test/GetUsersTest.class
 com/api/test/GetAuthorByIdBookTest.class
+com/api/test/PutUserByIdTest.class
 com/api/test/PostActivityTest.class
 com/api/services/BaseService.class
 com/api/test/GetActivitiesTest$1.class
@@ -13,6 +14,7 @@ com/api/test/PostAuthorTest.class
 com/api/services/ActivitiesService.class
 com/api/services/BooksService.class
 com/api/test/PutAuthorByIdTest.class
+com/api/test/GetUserByIdTest.class
 com/api/test/GetBooksTest.class
 com/api/test/GetActivitiesTest.class
 com/api/models/request/BooksRequest.class

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="11.73" tests="17" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="11.61" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/local/sdkman/candidates/java/21.0.5-ms/lib"/>
-    <property name="sun.java.command" value="/workspaces/Rest-Assured-Project/REST-API-DEMO-PROJECT/target/surefire/surefirebooter-20250401200724380_3.jar /workspaces/Rest-Assured-Project/REST-API-DEMO-PROJECT/target/surefire 2025-04-01T20-07-24_272-jvmRun1 surefire-20250401200724380_1tmp surefire_0-20250401200724380_2tmp"/>
+    <property name="sun.java.command" value="/workspaces/Rest-Assured-Project/REST-API-DEMO-PROJECT/target/surefire/surefirebooter-20250402192623284_3.jar /workspaces/Rest-Assured-Project/REST-API-DEMO-PROJECT/target/surefire 2025-04-02T19-26-22_598-jvmRun1 surefire-20250402192623284_1tmp surefire_0-20250402192623284_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/workspaces/Rest-Assured-Project/REST-API-DEMO-PROJECT/target/test-classes:/workspaces/Rest-Assured-Project/REST-API-DEMO-PROJECT/target/classes:/home/codespace/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/home/codespace/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/codespace/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/codespace/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/codespace/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/codespace/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/codespace/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/codespace/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/codespace/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/codespace/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/home/codespace/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/home/codespace/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/home/codespace/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/codespace/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/home/codespace/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.2/jackson-databind-2.16.2.jar:/home/codespace/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.2/jackson-annotations-2.16.2.jar:/home/codespace/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/workspaces/Rest-Assured-Project/REST-API-DEMO-PROJECT/target/surefire/surefirebooter-20250401200724380_3.jar"/>
+    <property name="surefire.real.class.path" value="/workspaces/Rest-Assured-Project/REST-API-DEMO-PROJECT/target/surefire/surefirebooter-20250402192623284_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-LTS"/>
     <property name="user.name" value="codespace"/>
@@ -54,21 +54,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="getBooks" classname="com.api.test.GetBooksTest" time="3.572"/>
-  <testcase name="getActivityById" classname="com.api.test.GetActivityByIdTest" time="0.458"/>
-  <testcase name="postUsers" classname="com.api.test.PostUsersTest" time="0.497"/>
-  <testcase name="postBooks" classname="com.api.test.PostBooksTest" time="0.427"/>
-  <testcase name="getAuthorById" classname="com.api.test.GetAuthorByIdTest" time="0.41"/>
-  <testcase name="putBookById" classname="com.api.test.PutBookByIdTest" time="0.418"/>
-  <testcase name="getBooksById" classname="com.api.test.GetBookByIdTest" time="0.425"/>
-  <testcase name="getActivities" classname="com.api.test.GetActivitiesTest" time="0.417"/>
-  <testcase name="putUserById" classname="com.api.test.PutUserByIdTest" time="0.466"/>
-  <testcase name="getAuthors" classname="com.api.test.GetAuthorsTest" time="1.095"/>
-  <testcase name="putActivity" classname="com.api.test.PutAtivityTest" time="0.427"/>
+  <testcase name="getBooks" classname="com.api.test.GetBooksTest" time="3.633"/>
+  <testcase name="getActivityById" classname="com.api.test.GetActivityByIdTest" time="0.483"/>
+  <testcase name="postUsers" classname="com.api.test.PostUsersTest" time="0.529"/>
+  <testcase name="postBooks" classname="com.api.test.PostBooksTest" time="0.4"/>
+  <testcase name="getAuthorById" classname="com.api.test.GetAuthorByIdTest" time="0.411"/>
+  <testcase name="putBookById" classname="com.api.test.PutBookByIdTest" time="0.426"/>
+  <testcase name="getBooksById" classname="com.api.test.GetBookByIdTest" time="0.443"/>
+  <testcase name="getActivities" classname="com.api.test.GetActivitiesTest" time="0.459"/>
+  <testcase name="putUserById" classname="com.api.test.PutUserByIdTest" time="0.417"/>
+  <testcase name="getAuthors" classname="com.api.test.GetAuthorsTest" time="0.95"/>
+  <testcase name="putActivity" classname="com.api.test.PutAtivityTest" time="0.41"/>
   <testcase name="postAuthor" classname="com.api.test.PostAuthorTest" time="0.416"/>
-  <testcase name="getUsers" classname="com.api.test.GetUsersTest" time="0.417"/>
-  <testcase name="putAuthorById" classname="com.api.test.PutAuthorByIdTest" time="0.407"/>
-  <testcase name="getUserById" classname="com.api.test.GetUserByIdTest" time="0.399"/>
-  <testcase name="getAuthorByIdBook" classname="com.api.test.GetAuthorByIdBookTest" time="0.394"/>
-  <testcase name="postActivity" classname="com.api.test.PostActivityTest" time="0.398"/>
+  <testcase name="getUsers" classname="com.api.test.GetUsersTest" time="0.423"/>
+  <testcase name="putAuthorById" classname="com.api.test.PutAuthorByIdTest" time="0.4"/>
+  <testcase name="getUserById" classname="com.api.test.GetUserByIdTest" time="0.401"/>
+  <testcase name="getAuthorByIdBook" classname="com.api.test.GetAuthorByIdBookTest" time="0.396"/>
+  <testcase name="postActivity" classname="com.api.test.PostActivityTest" time="0.403"/>
 </testsuite>
