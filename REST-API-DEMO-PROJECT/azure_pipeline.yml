@@ -4,7 +4,7 @@ trigger:
 variables:
   JAVA_VERSION: '17'
   MAVEN_GOALS: 'clean test'
-  TEST_RESULTS_PATH: '**/target/surefire-reports/TEST-*.xml'
+  TEST_RESULTS_PATH: 'REST-API-DEMO-PROJECT/target/surefire-reports/TEST-*.xml'
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -13,10 +13,10 @@ jobs:
   - job: BuildAndTest
     timeoutInMinutes: 10 
     steps:
-      - checkout: self 
+      - checkout: self  # Ensures the repo is cloned
 
-      - script: ls -la $(System.DefaultWorkingDirectory)  
-        displayName: 'Check Workspace Files'
+      - script: echo "Running tests"
+        displayName: "Start Pipeline"
 
       - task: JavaToolInstaller@0
         inputs:
@@ -29,9 +29,15 @@ jobs:
           mvn --version
         displayName: 'Verify Maven Installation'
 
+      - script: ls -la $(System.DefaultWorkingDirectory)
+        displayName: 'Check Root Directory'
+
+      - script: ls -la $(System.DefaultWorkingDirectory)/REST-API-DEMO-PROJECT
+        displayName: 'Check Project Directory'
+
       - task: Cache@2
         inputs:
-          key: 'maven | "$(Agent.OS)" | pom.xml'
+          key: 'maven | "$(Agent.OS)" | REST-API-DEMO-PROJECT/pom.xml'
           path: ~/.m2/repository
           restoreKeys: |
             maven | "$(Agent.OS)"
@@ -60,7 +66,7 @@ jobs:
 
       - script: |
           cd $(System.DefaultWorkingDirectory)/REST-API-DEMO-PROJECT
-          mvn surefire-report:report-only
+          mvn site surefire-report:report-only
         displayName: 'Generate HTML Test Report'
 
       - task: PublishBuildArtifacts@1
@@ -83,7 +89,7 @@ jobs:
         inputs:
           targetType: 'inline'
           script: |
-            if ("$(Build.Status)" -ne "Succeeded") {
+            if ("$(Build.SourceBranchName)" -ne "Succeeded") {
               Write-Host "##vso[task.logissue type=error]Build failed! Notify the team."
             }
         condition: failed()
