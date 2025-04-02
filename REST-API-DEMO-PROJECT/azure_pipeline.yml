@@ -28,7 +28,7 @@ jobs:
 
       - task: Cache@2
         inputs:
-          key: 'maven | "$(Agent.OS)" | pom.xml'
+          key: 'maven | "$(Agent.OS)" | REST-API-DEMO-PROJECT/pom.xml'
           path: ~/.m2/repository
           restoreKeys: |
             maven | "$(Agent.OS)"
