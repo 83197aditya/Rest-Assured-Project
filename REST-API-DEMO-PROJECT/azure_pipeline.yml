@@ -1,0 +1,32 @@
+trigger:
+  - main  # Runs the pipeline on commits to the main branch
+
+pool:
+  vmImage: 'ubuntu-latest'  # Uses Ubuntu for the build agent
+
+steps:
+  - task: JavaToolInstaller@0
+    inputs:
+      versionSpec: '17'  # Set Java version (8, 11, or 17)
+      jdkArchitecture: 'x64'
+
+  - script: |
+      echo "Setting up Maven"
+      mvn --version
+    displayName: 'Verify Maven Installation'
+
+  - script: |
+      echo "Running tests with Maven"
+      mvn clean test
+    displayName: 'Run REST Assured Tests'
+
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFiles: '**/target/surefire-reports/TEST-*.xml'  # Collects JUnit test results
+      testRunTitle: 'REST Assured Tests'
+    condition: succeededOrFailed()
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: 'target/surefire-reports'  # Uploads test reports
+      artifactName: 'TestReports'
