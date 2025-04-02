@@ -1,8 +1,6 @@
 trigger:
   - main  # Runs the pipeline on commits to the main branch
 
-timeoutInMinutes: 30  # Stops if execution takes more than 30 minutes
-
 variables:
   JAVA_VERSION: '17'
   MAVEN_GOALS: 'clean test'
@@ -11,6 +9,12 @@ variables:
 pool:
   vmImage: 'ubuntu-latest'
 
+jobs:
+  - job: BuildAndTest
+    timeoutInMinutes: 10  # ✅ Correct placement inside a job
+    steps:
+      - script: echo "Running tests"
+      
 steps:
   - task: JavaToolInstaller@0
     inputs:
