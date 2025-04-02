@@ -12,10 +12,9 @@ pool:
 jobs:
   - job: BuildAndTest
     timeoutInMinutes: 10  # ✅ Correct placement inside a job
-    steps:
-      - script: echo "Running tests"
-      
 steps:
+  - script: echo "Running tests"
+
   - task: JavaToolInstaller@0
     inputs:
       versionSpec: '$(JAVA_VERSION)'
